@@ -28,7 +28,7 @@ end
 
 def play(songs)
   list(songs)
-  puts
+  
   puts "Enter song name or number"
   song_pick = gets.chomp.downcase
   # songs.each_with_index do |song,index|
