@@ -25,3 +25,18 @@ def list(songs)
     puts "#{index + 1}. #{song}"
   end
 end
+
+def play(songs)
+  list(songs)
+  puts
+  puts "Enter song name or number"
+  song_pick = gets.chomp.downcase
+  # songs.each_with_index do |song,index|
+    if songs.include?(song_pick) 
+      puts "Now playing song #{song_pick}"
+    elsif songs[song_pick.to_i - 1] 
+      puts "Now playing #{songs[song_pick.to_i - 1]}"
+    else
+      puts "Invalid input. Please try again!"
+    end
+end
