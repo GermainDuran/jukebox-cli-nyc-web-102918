@@ -22,9 +22,9 @@ end
 
 def list(songs)
   i=0
-  while (i<songs.length){
+  while (i < songs.length){
    puts songs[0] 
     i+=1
-    
   }
+  
 end 
